@@ -1,7 +1,7 @@
 import logging
 import time
 import datetime
-from PySide.QtCore import QObject, Signal
+from PySide2.QtCore import QObject, Signal
 
 from arbi import constants
 from arbi.models.engine import DataEngine

@@ -2,7 +2,7 @@ import time
 import logging
 
 from mock import Mock
-from PySide.QtCore import QObject, Signal
+from PySide2.QtCore import QObject, Signal
 
 from arbi.constants import THREAD_ALIVE_CHECK_INTERVAL
 from arbi.feeds.vip.networking import VIPFeedThreadObj

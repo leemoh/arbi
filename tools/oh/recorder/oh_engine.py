@@ -2,9 +2,9 @@ import time
 import datetime
 import logging
 import cProfile
-import StringIO
+import io
 import pstats
-from Queue import Queue
+import queue
 
 from pymongo.errors import ServerSelectionTimeoutError, DuplicateKeyError
 

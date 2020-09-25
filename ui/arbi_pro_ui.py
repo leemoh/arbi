@@ -1,8 +1,8 @@
 """
 Main UI
 """
-from PySide.QtCore import Qt
-from PySide.QtGui import QTableView, QVBoxLayout, QHBoxLayout, QMainWindow, QPushButton, QFrame, QLabel, QWidget, QLayout
+from PySide2.QtCore import Qt
+from PySide2.QtWidgets import QTableView, QVBoxLayout, QHBoxLayout, QMainWindow, QPushButton, QFrame, QLabel, QWidget, QLayout
 from arbi.feeds.vip.constants import ACCOUNT_MAP
 from arbi.feeds.betfair.constants import BETFAIR_USERNAME
 from arbi.ui.menu_bar_ui import MenuBarUI

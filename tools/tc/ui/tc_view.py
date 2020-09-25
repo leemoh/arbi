@@ -1,4 +1,4 @@
-from PySide.QtGui import QLabel
+from PySide2.QtWidgets import QLabel
 from arbi.constants import SCREEN_SIZE
 from arbi.ui.menu_bar_ui import MenuBarUI
 from arbi.ui.arbi_pro_ui import BaseView

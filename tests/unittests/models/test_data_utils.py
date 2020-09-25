@@ -1,6 +1,6 @@
 import datetime
 from mock import Mock, patch, call
-from unittest2 import TestCase
+from unittest import TestCase
 from arbi.models.data_utils import log_opps_details
 
 

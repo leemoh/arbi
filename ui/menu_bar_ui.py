@@ -1,4 +1,4 @@
-from PySide import QtGui, QtCore
+from PySide2 import QtGui, QtCore
 from arbi.constants import ARBI_SUMMARY_HEADER, MINI_PROFIT, BOOKIE_ID_MAP
 from arbi.feeds.vip.constants import ACCOUNT_MAP
 from arbi.ui.engine_inspector_ui import EngineInspectorUI

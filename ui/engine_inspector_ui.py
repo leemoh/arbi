@@ -1,4 +1,6 @@
-from PySide.QtGui import QWidget, QTableView, QVBoxLayout, QLabel, QHBoxLayout, QLineEdit, QComboBox
+import sys
+import PyQt5
+from PySide2.QtWidgets import QWidget, QTableView, QVBoxLayout, QLabel, QHBoxLayout, QLineEdit, QComboBox
 from arbi.ui_models.engine_inspector_model import DATA_ENGINE_TABLE_HEADER
 from arbi.ui.constants import ENGINE_INSPECTOR_UI_REFRESH_INVERVAL
 

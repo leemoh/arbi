@@ -1,6 +1,6 @@
 import pytest
-pytest.main('-v --cov=arbi '
-            #'--ignore=tests/unittests/feeds/ '         # 2.5s
+pytest.main('-v --cov=arbi',
+            '--ignore=tests/unittests/feeds/ '         # 2.5s
             #'--ignore=tests/unittests/execution/ '     # 1.5s
             #'--ignore=tests/unittests/models/ '        # 0.5s
             #'--ignore=tests/unittests/models/test_arbi_spotter.py '    # 16s

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from mock import patch, ANY, Mock
-from unittest2 import TestCase
+from unittest import TestCase
 from arbi.tools.tc.web.scraper import SportteryScraper
 
 

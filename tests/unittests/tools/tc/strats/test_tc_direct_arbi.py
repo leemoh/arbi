@@ -1,5 +1,5 @@
 import mock
-from unittest2 import TestCase
+from unittest import TestCase
 
 from arbi.tools.tc.strats.tc_direct_arbi import TCDirectArbiStrategy
 

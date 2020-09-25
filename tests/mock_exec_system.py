@@ -48,7 +48,7 @@ class ExecSystem(object):
                 score = ':'.join(opp_list[3:5])
                 occurred_at_uk = datetime.datetime.strptime(opp_list[6], '%Y-%m-%d %H:%M:%S.%f')
                 t = datetime.datetime.utcnow() + datetime.timedelta(hours=8)
-                print 'match id: {}, score: {}, delay: {}'.format(match_id, score, (t - occurred_at_uk).total_seconds())
+                print ('match id: {}, score: {}, delay: {}'.format(match_id, score, (t - occurred_at_uk).total_seconds()))
 
     def __del__(self):
         try:

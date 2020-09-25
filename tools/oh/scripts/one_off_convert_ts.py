@@ -35,12 +35,12 @@ for mon in ['aug']:
                         try:
                             ts = datetime.datetime.strptime(ts_str, '%Y-%m-%d %H:%M:%S')
                         except Exception as e:
-                            print '--1--', match_id, ts_str
-                            print e
+                            print ('--1--'), match_id, ts_str
+                            print (e)
                             continue
                         tseconds = (ts - epoch).total_seconds()
                         query = 'odds.{}.{}.{}.{}'.format(bet_type, sub_type, bookie, ts_str)
                         collection.find_one_and_update({'_id': match_id}, {'$set': {query: [tseconds, price_list]}})
                         count += 1
 
-print 'It took {} seconds to update {} odds records'.format(time.time() - t0, count)
+print ('It took {} seconds to update {} odds records'.format(time.time() - t0, count))

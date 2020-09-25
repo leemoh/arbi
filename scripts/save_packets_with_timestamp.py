@@ -15,7 +15,7 @@ def main():
     vip_feed = VIPFeed(HOSTS[0], PORTS[0])
 
     if not vip_feed.login(*ACCOUNT_MAP[2]):
-        print 'Login failed'
+        print ('Login failed')
         return
 
     with open(FILE_NAME, 'w') as f:
@@ -30,10 +30,10 @@ def main():
         while True:
             packet = vip_feed.get_one_packet()
             if not packet:
-                print 'no packet'
+                print ('no packet')
                 return
             elif len(packet) == 1 and packet[0] == 'LOGOUT\x00':
-                print 'logout'
+                print ('logout')
                 return
 
             t = datetime.datetime.utcnow()

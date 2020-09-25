@@ -3,7 +3,7 @@ import datetime
 from multiprocessing.pool import AsyncResult
 
 import mock
-from unittest2 import TestCase
+from unittest import TestCase
 
 from arbi.models.arbi_spotter import ArbiSpotter
 from arbi.strats.direct_arbi import DirectArbiStrategy

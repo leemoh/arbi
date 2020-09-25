@@ -20,7 +20,7 @@ with open(dir_path + '\opportunities.csv', 'w') as output:
     output.write(','.join(ARBI_SUMMARY_HEADER) + '\n')
     for filename in glob.glob(dir_path + '\*.log'):
         if 'tc_log_' in filename:
-            print filename
+            print (filename)
             with open(filename) as f:
                 for line in f:
                     if "{'Single Market': " in line:
@@ -34,7 +34,7 @@ with open(dir_path + '\opportunities.csv', 'w') as output:
                                 try:
                                     v = v.encode('utf8')
                                 except UnicodeDecodeError:
-                                    print 'UnicodeDecodeError', v
+                                    print ('UnicodeDecodeError', v)
                                     v = str(v)
                                 opp_lst.append(v)
                             else:
@@ -43,4 +43,4 @@ with open(dir_path + '\opportunities.csv', 'w') as output:
                         output.write(','.join(opp_lst) + '\n')
                         i += 1
 
-print 'Opportunities found:', i
+print ('Opportunities found:', i)

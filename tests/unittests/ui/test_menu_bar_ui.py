@@ -1,6 +1,6 @@
 from mock import patch, Mock
-from unittest2 import TestCase
-from PySide import QtGui
+from unittest import TestCase
+from PySide2 import QtGui
 from arbi.ui.menu_bar_ui import MenuBarUI, AccountPanelUI
 from arbi.ui_models.menu_bar_model import MenuBarModel, AccountModel
 from arbi.ui_models.engine_inspector_model import DataEngineTableModel

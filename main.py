@@ -4,7 +4,7 @@ Entrance to run the app
 import os
 import datetime
 import logging
-from PySide.QtGui import QApplication
+from PySide2.QtGui import*#QApplication
 
 from arbi.ui.arbi_pro_ui import ArbiProView
 from arbi.arbi_pro import ArbiProModel

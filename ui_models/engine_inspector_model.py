@@ -1,4 +1,5 @@
-from PySide.QtCore import QAbstractTableModel, Qt, SIGNAL, QModelIndex
+import PySide2.QtCore
+from PySide2.QtCore import QAbstractTableModel, Qt, SIGNAL, QModelIndex
 
 
 DATA_ENGINE_TABLE_HEADER = [

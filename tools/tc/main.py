@@ -3,9 +3,10 @@ TC stands for Ti Cai Wang(www.sporttery.cn/). We use TC Tool to discover opportu
 Because sporttery has basketball, TC tool can do basketball too.
 """
 import os
+import sys
 import datetime
 import logging
-from PySide.QtGui import QApplication
+from PySide2.QtWidgets import QApplication
 
 from arbi.constants import ROOT_PATH
 from arbi.tools.tc.ui.tc_view import TCView

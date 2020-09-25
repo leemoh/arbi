@@ -1,6 +1,6 @@
 import mock
 import datetime
-from unittest2 import TestCase
+from unittest import TestCase
 from arbi.tools.oh.reader.price_sensor import PriceSensor
 
 class PriceSensorTest(TestCase):

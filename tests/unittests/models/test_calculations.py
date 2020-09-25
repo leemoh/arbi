@@ -1,4 +1,4 @@
-from unittest2 import TestCase
+from unittest import TestCase
 from arbi.models.calculations import calculate_stakes, calculate_stakes_new, convert_back_lay_prices, \
     get_better_price_from_back_lay_prices
 

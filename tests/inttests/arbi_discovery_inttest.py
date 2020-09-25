@@ -1,8 +1,8 @@
 import mock
 import time
 import datetime
-from Queue import Queue
-from unittest2 import TestCase
+from queue import Queue
+from unittest import TestCase
 from arbi.models.engine import DataEngine
 from arbi.execution.arbi_exec import ExecMsgerConnectionError, ArbiExecMessenger, MockMessenger
 from arbi.models.arbi_spotter import ArbiSpotter

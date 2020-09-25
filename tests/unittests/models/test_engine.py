@@ -1,7 +1,7 @@
 import datetime
 from mock import Mock, patch
-from Queue import Queue
-from unittest2 import TestCase
+from queue import Queue
+from unittest import TestCase
 from arbi.models.engine import DataEngine
 from arbi.feeds.vip.networking import VIPFeedThreadObj
 

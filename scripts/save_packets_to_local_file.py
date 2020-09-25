@@ -14,7 +14,7 @@ def main():
     vip_feed = VIPFeed(HOSTS[0], PORTS[0])
 
     if not vip_feed.login(*ACCOUNT_MAP[0]):
-        print 'Login failed'
+        print ('Login failed')
         return
 
     with open(FILE_NAME, 'w') as f:
@@ -25,10 +25,10 @@ def main():
         while True:
             packet = vip_feed.get_one_packet()
             if not packet:
-                print 'no packet'
+                print('no packet')
                 return
             elif len(packet) == 1 and packet[0] == 'LOGOUT\x00':
-                print 'logout'
+                print('logout')
                 return
 
             pkg_counter += 1
@@ -36,8 +36,8 @@ def main():
             if pkg_counter >= TOTAL_PACKETS:
                 break
 
-    print 'Processed {0} packets, average time for processing each packet: {1}'.format(
-            TOTAL_PACKETS, (time.time() - t0) / TOTAL_PACKETS)
+    print('Processed {0} packets, average time for processing each packet: {1}'.format(
+            TOTAL_PACKETS, (time.time() - t0) / TOTAL_PACKETS))
 
 
 if __name__ == '__main__':

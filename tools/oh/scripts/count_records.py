@@ -16,4 +16,4 @@ for i in range(1, 31):
     for doc in cursor:
         count += sum([len(price_dict) for price_info in doc['odds'].values() for bookies_and_prices in price_info.values() for price_dict in bookies_and_prices.values()])
 
-    print 'Day {} odds records: {}'.format(i, count)
+    print('Day {} odds records: {}'.format(i, count))

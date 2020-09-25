@@ -1,5 +1,5 @@
 import re
-from PySide import QtGui
+from PySide2 import QtGui
 from arbi.feeds.vip.constants import HOSTS, PORTS
 from arbi.ui.menu_bar_ui import AccountPanelUI
 

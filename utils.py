@@ -1,7 +1,7 @@
 import os
 import zlib
 import gzip
-import StringIO
+import io
 import datetime
 import psutil
 # from dateutil import tz
@@ -39,7 +39,7 @@ def unzip_string(zipped_string):
 
 def gzip_string(arbi_opps_orders_str):
     """Given a string, return a string compressed by gnu gzip"""
-    buf = StringIO.StringIO()
+    buf = io.StringIO()
     gz = gzip.GzipFile(fileobj=buf, mode='w')
     try:
         gz.write(arbi_opps_orders_str)

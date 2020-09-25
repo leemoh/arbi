@@ -1,6 +1,6 @@
 from mock import patch, ANY
-from Queue import Queue
-from unittest2 import TestCase
+from queue import Queue
+from unittest import TestCase
 from arbi.models.engine import DataEngine
 from arbi.models.match import Match
 from arbi.feeds.vip.networking import VIPFeedThreadObj

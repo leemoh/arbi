@@ -1,5 +1,5 @@
 import sys
-from unittest2 import defaultTestLoader
+from unittest import defaultTestLoader
 from nose.core import run
 
 

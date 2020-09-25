@@ -1,8 +1,8 @@
 import os
 import time
 import mock
-from Queue import Queue
-from unittest2 import TestCase
+from queue import Queue
+from unittest import TestCase
 from arbi.feeds.vip.networking import VIPFeed, VIPFeedThreadObj
 from arbi.feeds.base_feed import FeedConnectionError
 from arbi.constants import ROOT_PATH

@@ -1,5 +1,5 @@
 from mock import Mock
-from unittest2 import TestCase
+from unittest import TestCase
 from arbi.ui.arbi_pro_ui import ArbiProView
 from arbi.ui_models.engine_inspector_model import DataEngineTableModel
 from arbi.ui_models.menu_bar_model import StratsPanelModel

@@ -1,5 +1,5 @@
-from PySide.QtCore import QCoreApplication
-from PySide.QtGui import QApplication
+from PySide2.QtCore import QCoreApplication
+from PySide2.QtWidgets import QApplication
 
 
 def set_qapp():

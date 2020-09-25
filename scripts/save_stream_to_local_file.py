@@ -23,7 +23,7 @@ def main():
             count += 1
 
             if count % 20 == 0:
-                print '--count--', count
+                print ('--count--', count)
 
 
 def get_raw_data(f):

@@ -148,5 +148,5 @@ if __name__ == '__main__':
     t0 = time.time()
     scraper = SportteryScraper()
     data = scraper.scrape_football()
-    print 'time elapsed in seconds:', time.time() - t0
-    print '--data--', data
+    print ('time elapsed in seconds:', time.time() - t0)
+    print ('--data--', data)

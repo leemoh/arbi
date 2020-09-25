@@ -1,5 +1,5 @@
 import mock
-from unittest2 import TestCase
+from unittest import TestCase
 
 from arbi.strats.correlated_arbi_eh import EHvsEHXvsAHStrategy
 

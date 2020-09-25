@@ -1,7 +1,7 @@
 import time
 import logging
-from Queue import Queue
-from PySide.QtCore import QThread, QObject, Signal
+from multiprocessing  import Queue
+from PySide2.QtCore import QThread, QObject, Signal
 from arbi.utils import merge_dict
 from arbi.constants import THREAD_ALIVE_CHECK_INTERVAL, PROCESS_EXEC_MSG_MAX_TIME, EMPTY_SRC_Q_SLEEP_TIME, BOOKIE_ID_MAP
 from arbi.feeds.vip.networking import VIPFeedThreadObj

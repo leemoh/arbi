@@ -4,8 +4,8 @@ import codecs
 import logging
 import datetime
 import operator
-from PySide.QtCore import QAbstractTableModel, Qt, SIGNAL, QModelIndex
-from PySide.QtGui import QBrush
+from PySide2.QtCore import QAbstractTableModel, Qt, SIGNAL, QModelIndex
+from PySide2.QtGui import QBrush
 
 from arbi.constants import ROOT_PATH, ARBI_SUMMARY_HEADER, NO_REPEAT_OPPS_IN_HISTORIC_VIEW_TIME_FRAME
 

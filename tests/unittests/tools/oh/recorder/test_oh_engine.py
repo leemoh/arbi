@@ -1,6 +1,6 @@
 import datetime
 from mock import patch, Mock
-from unittest2 import TestCase
+from unittest import TestCase
 from arbi.models.record import YYUpdateOddsRecord, VIPUpdateOddsRecord
 from arbi.tools.oh.recorder.oh_engine import OHEngine
 

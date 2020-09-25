@@ -3,7 +3,7 @@ import time
 import datetime
 import inspect
 from mock import patch, Mock
-from unittest2 import TestCase
+from unittest import TestCase
 
 from arbi.utils import gzip_string
 from arbi.execution.arbi_exec import ArbiExecMessenger, MockMessenger, ArbiExecMsgerThreadObj, ExecMsgerConnectionError
@@ -40,7 +40,7 @@ class ArbiExecTest(TestCase):
         strat_id = '3'
         arbi_opps = [ArbiOpportunity(match_info, datetime.datetime(2015, 4, 15, 22, 55, 0, 1000), strat_id, (0.02544, (selection1, selection2)))]
 
-        hk_time = (2015, 4, 16, 06, 55)
+        hk_time = (2015, 4, 16, 6, 55)
         messenger.get_hk_now = lambda: datetime.datetime(*hk_time)
         with patch('arbi.execution.arbi_exec.gzip_string', lambda x: x):
             messenger.send(arbi_opps)
@@ -63,7 +63,7 @@ class ArbiExecTest(TestCase):
         strat_id = '4'
         arbi_opps = [ArbiOpportunity(match_info, datetime.datetime(2015, 4, 15, 22, 55, 0, 1000), strat_id, opp)]
 
-        hk_time = (2015, 4, 16, 06, 55)
+        hk_time = (2015, 4, 16, 6, 55)
         messenger.get_hk_now = lambda: datetime.datetime(*hk_time)
         with patch('arbi.execution.arbi_exec.gzip_string', lambda x: x):
             messenger.send(arbi_opps)

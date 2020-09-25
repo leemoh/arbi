@@ -1,5 +1,5 @@
 from mock import patch
-from unittest2 import TestCase
+from unittest import TestCase
 from arbi.models.odds import Odds
 
 class OddsTest(TestCase):

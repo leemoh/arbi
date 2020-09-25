@@ -1,4 +1,4 @@
-from unittest2 import TestCase
+from unittest import TestCase
 
 from arbi.ui_models.menu_bar_model import StratsPanelModel
 from arbi.strats.correlated_arbi import AHvsXvs2Strategy, AHvs2Strategy

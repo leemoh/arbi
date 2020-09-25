@@ -5,7 +5,7 @@ import time
 import datetime
 import logging
 
-from PySide.QtCore import QObject, Signal
+from PySide2.QtCore import QObject, Signal
 
 from arbi.models.engine import DataEngine
 from arbi.models.arbi_spotter import ArbiSpotter
